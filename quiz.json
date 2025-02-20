@@ -1,0 +1,609 @@
+{
+    "questions": [
+        {
+            "question": "What is an Operating System?",
+            "correct_answer": "A mediator program between computer users and computer hardware",
+            "options": [
+                "A mediator program between computer users and computer hardware",
+                "A program that only manages hardware resources",
+                "Software that only runs applications",
+                "A program that only interfaces with users"
+            ],
+            "explanation": "An Operating System serves as an intermediary program that manages the interaction between computer users and the hardware, facilitating both resource management and user interface."
+        },
+        {
+            "question": "What is the difference between a program and a process?",
+            "correct_answer": "A program is a passive entity stored on disk while a process is an active entity in execution",
+            "options": [
+                "A program is a passive entity stored on disk while a process is an active entity in execution",
+                "A program is larger than a process",
+                "A process is stored on disk while a program is in memory",
+                "There is no difference between them"
+            ],
+            "explanation": "The key distinction is that a program is a passive entity stored on disk, while a process is an active entity that represents a program in execution."
+        },
+        {
+            "question": "What are the different sections of a process?",
+            "correct_answer": "Text section, Program Counter, Stack, Data Section, Heap",
+            "options": [
+                "Text section, Program Counter, Stack, Data Section, Heap",
+                "Code, Memory, Cache, Disk, Network",
+                "Input, Output, Processing, Storage, Control",
+                "RAM, ROM, CPU, GPU, I/O"
+            ],
+            "explanation": "A process consists of: Text Section (program code), Program Counter (current activity), Stack (temporary data), Data Section (global variables), and Heap (dynamically allocated memory)."
+        },
+        {
+            "question": "What are the types of clustering in operating systems?",
+            "correct_answer": "Asymmetric clustering and Symmetric clustering",
+            "options": [
+                "Asymmetric clustering and Symmetric clustering",
+                "Horizontal clustering and Vertical clustering",
+                "Primary clustering and Secondary clustering",
+                "Internal clustering and External clustering"
+            ],
+            "explanation": "There are two types of clustering: Asymmetric clustering (one machine in hot-standby) and Symmetric clustering (multiple nodes executing applications while monitoring each other)."
+        },
+        {
+            "question": "What are the types of cloud computing deployment models?",
+            "correct_answer": "Public Cloud, Private Cloud, Hybrid Cloud",
+            "options": [
+                "Public Cloud, Private Cloud, Hybrid Cloud",
+                "Open Cloud, Closed Cloud, Mixed Cloud",
+                "Internal Cloud, External Cloud, Combined Cloud",
+                "Free Cloud, Paid Cloud, Enterprise Cloud"
+            ],
+            "explanation": "Cloud computing can be deployed as: Public Cloud (available via Internet), Private Cloud (operated by a company for internal use), and Hybrid Cloud (combination of public and private components)."
+        },
+        {
+            "question": "What are the main services provided by Operating Systems?",
+            "correct_answer": "User Interface, Program Execution, I/O Operations, File System Manipulation, Communications, Error Detection",
+            "options": [
+                "User Interface, Program Execution, I/O Operations, File System Manipulation, Communications, Error Detection",
+                "Only File Management and Process Management",
+                "Just User Interface and Program Execution",
+                "Only Memory Management and Security"
+            ],
+            "explanation": "Operating Systems provide multiple core services including UI, program execution, I/O operations, file system manipulation, communications between processes, and error detection to ensure reliable system operation."
+        },
+        {
+            "question": "What is a System Call?",
+            "correct_answer": "A method for a computer program to request a service from the kernel of the operating system",
+            "options": [
+                "A method for a computer program to request a service from the kernel of the operating system",
+                "A way to communicate between two applications",
+                "A method to connect to external hardware",
+                "A program that manages system resources"
+            ],
+            "explanation": "System calls are the interface through which programs request services from the operating system's kernel. Each system call is typically associated with a number and managed through a system call interface."
+        },
+        {
+            "question": "What are the three most commonly used APIs?",
+            "correct_answer": "Win32 API, POSIX API, Java API",
+            "options": [
+                "Win32 API, POSIX API, Java API",
+                "Linux API, Windows API, Mac API",
+                "Android API, iOS API, Web API",
+                "Python API, C++ API, Ruby API"
+            ],
+            "explanation": "The three most widely used APIs are: Win32 API for Windows systems, POSIX API for POSIX-based systems, and Java API for the Java Virtual Machine (JVM)."
+        },
+        {
+            "question": "What is a relocatable object file?",
+            "correct_answer": "Source code compiled into object files designed to be loaded at any physical memory location",
+            "options": [
+                "Source code compiled into object files designed to be loaded at any physical memory location",
+                "A file that can only be loaded at a specific memory address",
+                "A temporary file used during compilation",
+                "An executable file that cannot be moved"
+            ],
+            "explanation": "A relocatable object file is compiled source code that can be loaded into any physical memory location, making it flexible for memory management and program loading."
+        },
+        {
+            "question": "What are the two main components of the UNIX operating system?",
+            "correct_answer": "System programs and Kernel",
+            "options": [
+                "System programs and Kernel",
+                "User interface and Hardware",
+                "Applications and Drivers",
+                "Memory manager and Process scheduler"
+            ],
+            "explanation": "UNIX consists of system programs and the kernel. The kernel provides core functions like file systems, CPU scheduling, and memory management, while system programs operate above the system call interface."
+        },
+        {
+            "question": "What information does a Process Control Block (PCB) contain?",
+            "correct_answer": "Process state, Program counter, CPU registers, CPU scheduling info, Memory management info, Accounting info, I/O status info",
+            "options": [
+                "Process state, Program counter, CPU registers, CPU scheduling info, Memory management info, Accounting info, I/O status info",
+                "Only process state and program counter",
+                "Just CPU registers and memory information",
+                "Only I/O status and process state"
+            ],
+            "explanation": "A PCB contains comprehensive information about a process including its state, program counter, CPU registers, scheduling information, memory management details, accounting information, and I/O status information."
+        },
+        {
+            "question": "What is a context switch?",
+            "correct_answer": "When CPU switches from one process to another, saving the state of the old process and loading the state of the new process",
+            "options": [
+                "When CPU switches from one process to another, saving the state of the old process and loading the state of the new process",
+                "When a program starts running",
+                "When memory is allocated to a new process",
+                "When the operating system boots up"
+            ],
+            "explanation": "A context switch occurs when the CPU switches between processes, requiring the system to save the state of the current process and load the saved state of the new process."
+        },
+        {
+            "question": "What are the two models of Inter-Process Communication (IPC)?",
+            "correct_answer": "Shared memory and Message passing",
+            "options": [
+                "Shared memory and Message passing",
+                "Direct and Indirect communication",
+                "Synchronous and Asynchronous",
+                "Blocking and Non-blocking"
+            ],
+            "explanation": "IPC has two main models: Shared memory (controlled by the user) and Message passing (controlled by the system)."
+        },
+        {
+            "question": "What are the types of buffering in message passing systems?",
+            "correct_answer": "Zero capacity, Bounded capacity, Unbounded capacity",
+            "options": [
+                "Zero capacity, Bounded capacity, Unbounded capacity",
+                "Small, Medium, Large capacity",
+                "Fixed and Variable capacity",
+                "Static and Dynamic capacity"
+            ],
+            "explanation": "Message passing systems implement buffering in three ways: Zero capacity (no queue), Bounded capacity (finite length n), and Unbounded capacity (infinite length)."
+        },
+        {
+            "question": "What are the two types of pipes in inter-process communication?",
+            "correct_answer": "Ordinary pipes and Named pipes",
+            "options": [
+                "Ordinary pipes and Named pipes",
+                "Input pipes and Output pipes",
+                "System pipes and User pipes",
+                "Local pipes and Remote pipes"
+            ],
+            "explanation": "There are two types of pipes: Ordinary pipes (cannot be accessed outside the creating process) and Named pipes (can be accessed without parent-child relationship)."
+        },
+        {
+            "question": "What is the difference between Concurrency and Parallelism?",
+            "correct_answer": "Concurrency supports multiple tasks making progress, while Parallelism means the system can perform multiple tasks simultaneously",
+            "options": [
+                "Concurrency supports multiple tasks making progress, while Parallelism means the system can perform multiple tasks simultaneously",
+                "They are exactly the same thing",
+                "Concurrency is only for single-core systems, while Parallelism is for multi-core systems",
+                "Concurrency is faster than Parallelism"
+            ],
+            "explanation": "Concurrency allows multiple tasks to make progress over time, while Parallelism specifically refers to the system's ability to execute multiple tasks at the exact same time."
+        },
+        {
+            "question": "What are the three multithreading models?",
+            "correct_answer": "Many-to-One, One-to-One, Many-to-Many",
+            "options": [
+                "Many-to-One, One-to-One, Many-to-Many",
+                "Single-to-Single, Many-to-Few, Few-to-Many",
+                "User-to-Kernel, Kernel-to-User, User-to-User",
+                "Simple, Complex, Hybrid"
+            ],
+            "explanation": "The three multithreading models are: Many-to-One (many user threads to one kernel thread), One-to-One (each user thread maps to kernel thread), and Many-to-Many (many user threads to many kernel threads)."
+        },
+        {
+            "question": "When does CPU scheduling occur?",
+            "correct_answer": "When a process switches from running to waiting, running to ready, waiting to ready, or terminates",
+            "options": [
+                "When a process switches from running to waiting, running to ready, waiting to ready, or terminates",
+                "Only when a process starts or ends",
+                "Only during system boot",
+                "Only when memory is full"
+            ],
+            "explanation": "CPU scheduling decisions happen in four scenarios: when a process switches from running to waiting state, from running to ready state, from waiting to ready state, or when it terminates."
+        },
+        {
+            "question": "What are the main criteria for CPU scheduling?",
+            "correct_answer": "CPU Utilization, Throughput, Turnaround time, Waiting time, Response time",
+            "options": [
+                "CPU Utilization, Throughput, Turnaround time, Waiting time, Response time",
+                "Only CPU speed and memory usage",
+                "Just process priority and execution time",
+                "Memory allocation and disk space only"
+            ],
+            "explanation": "CPU scheduling criteria include: CPU Utilization (keeping CPU busy), Throughput (completed processes per time), Turnaround time (completion time), Waiting time (time in ready queue), and Response time (time until first response)."
+        },
+        {
+            "question": "What is Round Robin (RR) scheduling?",
+            "correct_answer": "Each process gets a small unit of CPU time, after which it's preempted and added to the end of the ready queue",
+            "options": [
+                "Each process gets a small unit of CPU time, after which it's preempted and added to the end of the ready queue",
+                "Processes are executed based on their arrival time only",
+                "Only the shortest jobs are executed first",
+                "Processes are executed based on priority numbers"
+            ],
+            "explanation": "Round Robin scheduling allocates each process a small time unit (typically 10-100ms), after which the process is preempted and moved to the end of the ready queue, ensuring fair CPU time distribution."
+        },
+        {
+            "question": "What are the three requirements that a solution to the critical section problem must satisfy?",
+            "correct_answer": "Mutual exclusion, Progress, Bounded waiting",
+            "options": [
+                "Mutual exclusion, Progress, Bounded waiting",
+                "Synchronization, Atomicity, Fairness",
+                "Deadlock prevention, Starvation freedom, Priority",
+                "Resource allocation, Process scheduling, Time sharing"
+            ],
+            "explanation": "A critical section solution must satisfy: Mutual exclusion (only one process in critical section), Progress (only non-reminder section processes can decide next entry), and Bounded waiting (limit on number of times other processes can enter)."
+        },
+        {
+            "question": "What is the difference between a Mutex and a Semaphore?",
+            "correct_answer": "Mutex is owned by one process and only the owner can release it, while Semaphore limits the number of users that can access shared resources simultaneously",
+            "options": [
+                "Mutex is owned by one process and only the owner can release it, while Semaphore limits the number of users that can access shared resources simultaneously",
+                "Mutex can handle multiple resources while Semaphore can only handle one",
+                "Mutex is slower than Semaphore",
+                "There is no difference between them"
+            ],
+            "explanation": "A Mutex is a locking mechanism owned by one process/thread, while a Semaphore is a signaling mechanism that can control access for multiple processes using tokens."
+        },
+        {
+            "question": "What are the main operations of a Mutex Lock?",
+            "correct_answer": "acquire() and release()",
+            "options": [
+                "acquire() and release()",
+                "lock() and unlock()",
+                "wait() and signal()",
+                "open() and close()"
+            ],
+            "explanation": "Mutex Locks have two atomic operations: acquire() to obtain the lock and release() to free it. These operations are executed atomically."
+        },
+        {
+            "question": "What are the three main functions of a Semaphore?",
+            "correct_answer": "Set, Check, Wait until previous value is realized and set again",
+            "options": [
+                "Set, Check, Wait until previous value is realized and set again",
+                "Lock, Unlock, Signal",
+                "Initialize, Execute, Terminate",
+                "Start, Stop, Reset"
+            ],
+            "explanation": "Semaphores have three main functions: Set (initialize value), Check (verify current value), and Wait (block until previous value is realized and set again)."
+        },
+        {
+            "question": "How does the wait() function behave differently in Semaphores versus Monitors?",
+            "correct_answer": "In Semaphores, process doesn't block if number > 0, while in Monitors it always blocks",
+            "options": [
+                "In Semaphores, process doesn't block if number > 0, while in Monitors it always blocks",
+                "Semaphores always block while Monitors never block",
+                "They behave exactly the same in both",
+                "Monitors don't have a wait function"
+            ],
+            "explanation": "The wait() function behaves differently: in Semaphores, the process doesn't block if the number is greater than 0, while in Monitors, the process always blocks."
+        },
+        {
+            "question": "What are the four conditions that must hold simultaneously for a deadlock to occur?",
+            "correct_answer": "Mutual exclusion, Hold and wait, No preemption, Circular wait",
+            "options": [
+                "Mutual exclusion, Hold and wait, No preemption, Circular wait",
+                "Resource allocation, Process scheduling, Memory management, I/O handling",
+                "Synchronization, Atomicity, Priority, Fairness",
+                "Process creation, Process termination, Process suspension, Process resumption"
+            ],
+            "explanation": "Deadlock occurs when all four conditions are present: Mutual exclusion (one process per resource), Hold and wait (processes holding resources while waiting for others), No preemption (resources released only voluntarily), and Circular wait (circular chain of waiting processes)."
+        },
+        {
+            "question": "What are the two main approaches to ensure a system never enters deadlock?",
+            "correct_answer": "Deadlock prevention and Deadlock avoidance",
+            "options": [
+                "Deadlock prevention and Deadlock avoidance",
+                "Deadlock detection and Deadlock recovery",
+                "Deadlock elimination and Deadlock handling",
+                "Deadlock resolution and Deadlock management"
+            ],
+            "explanation": "Systems use either Deadlock prevention (invalidating one of the four necessary conditions) or Deadlock avoidance (requiring additional information about possible resource requests) to prevent deadlock states."
+        },
+        {
+            "question": "When is a system considered to be in a safe state?",
+            "correct_answer": "When there exists a sequence of processes where each process's resource needs can be satisfied by currently available resources plus resources held by processes before it",
+            "options": [
+                "When there exists a sequence of processes where each process's resource needs can be satisfied by currently available resources plus resources held by processes before it",
+                "When all processes have completed execution",
+                "When no process is waiting for resources",
+                "When all resources are available"
+            ],
+            "explanation": "A system is in safe state when there exists a sequence <P1, P2, ..., Pn> where each process Pi can have its resource needs met by available resources plus those held by processes Pj where j < i."
+        },
+        {
+            "question": "What are the steps involved in recovery from deadlock?",
+            "correct_answer": "Victim selection, Rollback, and Starvation prevention",
+            "options": [
+                "Victim selection, Rollback, and Starvation prevention",
+                "Process termination and Resource reallocation",
+                "System restart and Process resumption",
+                "Resource cleanup and Process initialization"
+            ],
+            "explanation": "Deadlock recovery involves: selecting a victim (minimizing cost), rolling back to a safe state, and preventing starvation by considering the number of rollbacks in cost calculations."
+        },
+        {
+            "question": "How can Hold and Wait condition be prevented?",
+            "correct_answer": "By guaranteeing that whenever a process requests a resource, it doesn't hold any other resources",
+            "options": [
+                "By guaranteeing that whenever a process requests a resource, it doesn't hold any other resources",
+                "By allowing multiple processes to use the same resource",
+                "By forcing processes to release resources immediately",
+                "By preventing circular resource allocation"
+            ],
+            "explanation": "Hold and Wait condition can be prevented by ensuring that when a process requests a resource, it must not be holding any other resources, thus preventing the possibility of waiting while holding resources."
+        },
+        {
+            "question": "What are the three different times when address binding can occur?",
+            "correct_answer": "Compile Time, Load Time, and Execution Time",
+            "options": [
+                "Compile Time, Load Time, and Execution Time",
+                "Start Time, Run Time, and End Time",
+                "Initialize Time, Process Time, and Terminate Time",
+                "Boot Time, Operation Time, and Shutdown Time"
+            ],
+            "explanation": "Address binding can occur at three different times: Compile Time (compiler generates direct physical memory locations), Load Time (OS decides initial position during loading), and Execution Time (OS makes memory placement during execution)."
+        },
+        {
+            "question": "What are the three rules for memory allocation?",
+            "correct_answer": "First-Fit, Best-Fit, Worst-Fit",
+            "options": [
+                "First-Fit, Best-Fit, Worst-Fit",
+                "Quick-Fit, Smart-Fit, Random-Fit",
+                "Top-Fit, Middle-Fit, Bottom-Fit",
+                "Small-Fit, Medium-Fit, Large-Fit"
+            ],
+            "explanation": "Memory allocation follows three rules: First-Fit (allocate first sufficient space), Best-Fit (allocate smallest sufficient space), and Worst-Fit (allocate largest available space)."
+        },
+        {
+            "question": "What are the two types of fragmentation?",
+            "correct_answer": "External fragmentation and Internal fragmentation",
+            "options": [
+                "External fragmentation and Internal fragmentation",
+                "Primary fragmentation and Secondary fragmentation",
+                "Hard fragmentation and Soft fragmentation",
+                "Direct fragmentation and Indirect fragmentation"
+            ],
+            "explanation": "There are two types of fragmentation: External (when total memory is sufficient but not contiguous) and Internal (when fragmentation occurs within a memory block). The 50% rule states that for every 2 allocated memory blocks, a third is lost to fragmentation."
+        },
+        {
+            "question": "What is the 90/10 rule in paging?",
+            "correct_answer": "A process spends 90% of its time accessing only 10% of its memory space",
+            "options": [
+                "A process spends 90% of its time accessing only 10% of its memory space",
+                "90% of memory must be allocated with 10% reserved",
+                "90% of pages must be in memory with 10% in swap",
+                "Page size must be 90% efficient with 10% overhead"
+            ],
+            "explanation": "The 90/10 rule states that a process typically spends 90% of its execution time accessing only 10% of its memory space, which is a key principle in memory management."
+        },
+        {
+            "question": "What are the main advantages of paging?",
+            "correct_answer": "Eliminates external fragmentation, allows memory sharing between processes, allows partial process execution in main memory",
+            "options": [
+                "Eliminates external fragmentation, allows memory sharing between processes, allows partial process execution in main memory",
+                "Only improves memory access speed",
+                "Only reduces memory usage",
+                "Only provides better security"
+            ],
+            "explanation": "Paging provides three main advantages: it eliminates external fragmentation (no need for compaction), enables memory sharing between processes (reducing overall memory requirements), and allows processes to execute with only parts of them in main memory."
+        },
+        {
+            "question": "What is Virtual Memory?",
+            "correct_answer": "The separation of user's logical memory from physical memory",
+            "options": [
+                "The separation of user's logical memory from physical memory",
+                "A type of physical memory storage",
+                "A cache memory system",
+                "A type of hard disk storage"
+            ],
+            "explanation": "Virtual memory is a memory management technique that provides separation between the logical memory view of users and the actual physical memory, allowing for more efficient memory usage."
+        },
+        {
+            "question": "How is Virtual Address Space implemented?",
+            "correct_answer": "Through Demand paging and Demand segmentation",
+            "options": [
+                "Through Demand paging and Demand segmentation",
+                "Through Cache memory only",
+                "Through Physical memory only",
+                "Through RAM and ROM only"
+            ],
+            "explanation": "Virtual Address Space, which is the logical view of process memory storage, is implemented through two main techniques: Demand paging and Demand segmentation."
+        },
+        {
+            "question": "What is a Lazy Swapper?",
+            "correct_answer": "A system that never swaps a page into memory unless that page is needed",
+            "options": [
+                "A system that never swaps a page into memory unless that page is needed",
+                "A system that swaps all pages at once",
+                "A system that randomly swaps pages",
+                "A system that swaps pages at regular intervals"
+            ],
+            "explanation": "A Lazy Swapper is an optimization technique that only brings a page into memory when it's actually needed, rather than swapping unnecessarily."
+        },
+        {
+            "question": "What are the page replacement algorithms used when a page fault occurs?",
+            "correct_answer": "FIFO, Min, LRU, Random",
+            "options": [
+                "FIFO, Min, LRU, Random",
+                "Only FIFO and LRU",
+                "Only Random and Min",
+                "Only LRU and Random"
+            ],
+            "explanation": "When a page fault occurs, we can use different algorithms to select which page to remove: First In First Out (FIFO), Minimum usage (Min), Least Recently Used (LRU), or Random selection."
+        },
+        {
+            "question": "What does the LRU (Least Recently Used) page replacement algorithm do?",
+            "correct_answer": "Removes the page that has not been used for the longest period of time",
+            "options": [
+                "Removes the page that has not been used for the longest period of time",
+                "Removes the newest page",
+                "Removes a random page",
+                "Removes the most frequently used page"
+            ],
+            "explanation": "The Least Recently Used (LRU) algorithm removes the page that has the longest time period since its last use, based on the principle of temporal locality."
+        },
+        {
+            "question": "What are the main disk scheduling algorithms?",
+            "correct_answer": "FCFS (First-Come First-Served), SSTF (Shortest Seek Time First), SCAN, and C-SCAN",
+            "options": [
+                "FCFS (First-Come First-Served), SSTF (Shortest Seek Time First), SCAN, and C-SCAN",
+                "Only FIFO and Random Access",
+                "Just Sequential and Direct Access",
+                "Round Robin and Priority Based only"
+            ],
+            "explanation": "Disk scheduling algorithms include: FCFS (serving requests in order), SSTF (serving nearest requests), SCAN (head moves both ways), and C-SCAN (circular form of SCAN)."
+        },
+        {
+            "question": "What is Interleaving in disk management?",
+            "correct_answer": "A technique where blocks are not allocated physically continuously, but allocated considering the speed of known requests and OS",
+            "options": [
+                "A technique where blocks are not allocated physically continuously, but allocated considering the speed of known requests and OS",
+                "A method to format the disk",
+                "A way to organize disk sectors",
+                "A process of defragmenting the disk"
+            ],
+            "explanation": "Interleaving is a technique that allocates blocks non-continuously in physical space, taking into account the speed of known requests and operating system requirements."
+        },
+        {
+            "question": "What is Read Ahead?",
+            "correct_answer": "Reading a block from disk and placing it in the disk controller buffer before user request arrives",
+            "options": [
+                "Reading a block from disk and placing it in the disk controller buffer before user request arrives",
+                "Reading multiple sectors at once",
+                "Predicting which files will be needed next",
+                "Scanning the entire disk before reading"
+            ],
+            "explanation": "Read Ahead is an optimization technique where blocks are read from disk and placed in the disk controller buffer in anticipation of user requests."
+        },
+        {
+            "question": "What is RAID?",
+            "correct_answer": "A technique that uses multiple disks instead of a single disk to improve performance, data redundancy, or both",
+            "options": [
+                "A technique that uses multiple disks instead of a single disk to improve performance, data redundancy, or both",
+                "A type of disk formatting",
+                "A method of disk encryption",
+                "A disk compression technique"
+            ],
+            "explanation": "RAID (Redundant Arrays of Independent Disks) is a technology that combines multiple disk drives to enhance performance, provide data redundancy, or both."
+        },
+        {
+            "question": "What is Network-attached Storage (NAS)?",
+            "correct_answer": "Storage that enables network-based storage instead of local storage, often using protocols like NFS and CIFS",
+            "options": [
+                "Storage that enables network-based storage instead of local storage, often using protocols like NFS and CIFS",
+                "A type of local hard drive",
+                "A cloud storage service",
+                "A type of RAM memory"
+            ],
+            "explanation": "NAS provides network-based storage capabilities instead of local storage, commonly using protocols such as NFS (Network File System) and CIFS (Common Internet File System)."
+        },
+        {
+            "question": "What are the main attributes of a File?",
+            "correct_answer": "Name, Type, Location, Size, Protection, Creation time",
+            "options": [
+                "Name, Type, Location, Size, Protection, Creation time",
+                "Only name and size",
+                "Just location and type",
+                "Protection and access time only"
+            ],
+            "explanation": "A file has several attributes including its name, type, location, size, protection settings, and creation time, among others."
+        },
+        {
+            "question": "What are the common file operations (System Calls)?",
+            "correct_answer": "Create(), Open(), Read(), Delete(), Close(), Write(), Seek()",
+            "options": [
+                "Create(), Open(), Read(), Delete(), Close(), Write(), Seek()",
+                "Only Read and Write",
+                "Just Open and Close",
+                "Copy and Paste only"
+            ],
+            "explanation": "Common file operations include Create(), Open(), Read(), Delete(), Close(), Write(), and Seek(), which are implemented as system calls."
+        },
+        {
+            "question": "What are the two ways to access files from a programmer's perspective?",
+            "correct_answer": "Sequential access and Direct access",
+            "options": [
+                "Sequential access and Direct access",
+                "Random access and Linear access",
+                "Indexed access and Binary access",
+                "Primary access and Secondary access"
+            ],
+            "explanation": "From a programmer's perspective, files can be accessed either sequentially (processing data in order) or directly (accessing specific addresses or blocks based on key values)."
+        },
+        {
+            "question": "What are the different types of directory structures?",
+            "correct_answer": "Single-level, Two-level, Multi-level",
+            "options": [
+                "Single-level, Two-level, Multi-level",
+                "Only flat structure",
+                "Just hierarchical structure",
+                "Binary and Linear only"
+            ],
+            "explanation": "Directory structures can be Single-level (one namespace for entire disk), Two-level (separate directory per user), or Multi-level (tree-structured naming space)."
+        },
+        {
+            "question": "What are the components of disk latency?",
+            "correct_answer": "Seek Time and Rotation Time",
+            "options": [
+                "Seek Time and Rotation Time",
+                "Only access time",
+                "Just transfer time",
+                "Read time and Write time"
+            ],
+            "explanation": "Disk latency consists of Seek Time (time to position head on desired cylinder) and Rotation Time (time for appropriate sector to rotate under head)."
+        },
+        {
+            "question": "What are the two types of virtualization?",
+            "correct_answer": "Type 1 (Bare Metal) and Type 2 (Hosted)",
+            "options": [
+                "Type 1 (Bare Metal) and Type 2 (Hosted)",
+                "Hardware and Software virtualization",
+                "Network and Storage virtualization",
+                "Memory and CPU virtualization"
+            ],
+            "explanation": "There are two main types of virtualization: Type 1 (Bare Metal) which runs directly on hardware, and Type 2 (Hosted) which runs on top of an operating system."
+        },
+        {
+            "question": "What are the essential characteristics of Cloud Computing?",
+            "correct_answer": "On-demand self-service, Broad Network Access, Resource pooling, Rapid elasticity, Measured service",
+            "options": [
+                "On-demand self-service, Broad Network Access, Resource pooling, Rapid elasticity, Measured service",
+                "Only scalability and performance",
+                "Just network access and storage",
+                "Security and reliability only"
+            ],
+            "explanation": "Cloud Computing has five essential characteristics: On-demand self-service, Broad Network Access, Resource pooling, Rapid elasticity, and Measured service."
+        },
+        {
+            "question": "What are the main Cloud Service Models?",
+            "correct_answer": "Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS)",
+            "options": [
+                "Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS)",
+                "Only Hardware and Software services",
+                "Just Network and Storage services",
+                "Database and Application services only"
+            ],
+            "explanation": "The three main Cloud Service Models are: IaaS (providing infrastructure resources), PaaS (providing platform and development tools), and SaaS (providing software applications)."
+        },
+        {
+            "question": "What is a Hypervisor or Virtual Machine Manager (VMM)?",
+            "correct_answer": "A program that allows multiple operating systems to share a single hardware host",
+            "options": [
+                "A program that allows multiple operating systems to share a single hardware host",
+                "A type of operating system",
+                "A network management tool",
+                "A storage device controller"
+            ],
+            "explanation": "A Hypervisor or VMM is a program that enables multiple operating systems to share a single hardware host by managing and allocating hardware resources."
+        },
+        {
+            "question": "What are the key attributes of Cloud Computing?",
+            "correct_answer": "Scalability, Low Latency, Guaranteed Performance, Extensible Management, Self-Healing Resilience",
+            "options": [
+                "Scalability, Low Latency, Guaranteed Performance, Extensible Management, Self-Healing Resilience",
+                "Only cost and efficiency",
+                "Just security and privacy",
+                "Availability and reliability only"
+            ],
+            "explanation": "Cloud Computing has several key attributes: Scalability, Low Latency, Guaranteed Performance, Extensible Management, and Self-Healing Resilience."
+        }
+    ]
+}

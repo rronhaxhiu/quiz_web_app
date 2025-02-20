@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .stats-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .progress-container {
+            margin-bottom: 30px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #4CAF50;
+            transition: width 0.3s ease;
+        }
+        .question-list {
+            list-style: none;
+            padding: 0;
+        }
+        .question-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question-item.mastered {
+            border-left: 4px solid #4CAF50;
+        }
+        .question-item.in-progress {
+            border-left: 4px solid #FFC107;
+        }
+        .question-item.new {
+            border-left: 4px solid #2196F3;
+        }
+        .stats-details {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .mastery-indicator {
+            float: right;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+        }
+        .mastered .mastery-indicator {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .in-progress .mastery-indicator {
+            background-color: #FFC107;
+            color: black;
+        }
+        .new .mastery-indicator {
+            background-color: #2196F3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-header">
+        <h1>Question Statistics</h1>
+        <div class="progress-container">
+            <h3>Overall Progress</h3>
+            {% set mastered_count = questions|selectattr('stats.mastered', 'eq', true)|list|length %}
+            {% set total_count = questions|length %}
+            {% set progress_percentage = ((mastered_count / total_count * 100)|float)|round|int if total_count > 0 else 0 %}
+            <div class="progress-bar">
+                <div class="progress" style="width: {{ progress_percentage }}%"></div>
+            </div>
+            <p>{{ mastered_count }} out of {{ total_count }} questions mastered ({{ progress_percentage }}%)</p>
+        </div>
+    </div>
+
+    <ul class="question-list">
+        {% for q in questions %}
+            {% set success_rate = (q.stats.times_correct / q.stats.times_seen * 100)|round|int if q.stats.times_seen > 0 else 0 %}
+            <li class="question-item 
+                     {% if q.stats.mastered %}mastered
+                     {% elif q.stats.times_seen > 0 %}in-progress
+                     {% else %}new{% endif %}">
+                <div>
+                    {{ q.question }}
+                    <span class="mastery-indicator">
+                        {% if q.stats.mastered %}Mastered
+                        {% elif q.stats.times_seen > 0 %}In Progress
+                        {% else %}New{% endif %}
+                    </span>
+                </div>
+                <div class="stats-details">
+                    Times seen: {{ q.stats.times_seen }} | 
+                    Success rate: {{ success_rate }}% |
+                    {% if q.stats.last_seen %}
+                        Last seen: {{ q.stats.last_seen }}
+                    {% else %}
+                        Not attempted yet
+                    {% endif %}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/" class="btn">Take Quiz</a>
+</body>
+</html> 

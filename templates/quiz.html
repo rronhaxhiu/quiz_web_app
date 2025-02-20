@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operating Systems Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .option-box {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .option-box:hover {
+            background-color: #f5f5f5;
+            border-color: #999;
+        }
+        /* Hide the default radio button */
+        .option-box input[type="radio"] {
+            display: none;
+        }
+        /* Style for selected option */
+        .option-box input[type="radio"]:checked + label {
+            font-weight: bold;
+        }
+        .option-box input[type="radio"]:checked {
+            border-color: #4CAF50;
+        }
+        .option-box.selected {
+            background-color: #e3f2fd;
+            border-color: #2196F3;
+        }
+        .submit-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: right; margin-bottom: 20px;">
+        <a href="/stats" class="btn" style="background-color: #2196F3; padding: 10px; border-radius: 5px; color: white; text-decoration: none;">View Statistics</a>
+    </div>
+    <h1>Operating Systems Quiz</h1>
+    <form method="POST" action="/submit">
+        {% for i in range(10) %}
+        <div class="question">
+            <p><strong>Question {{ i + 1 }}:</strong> {{ questions[i].question }}</p>
+            <input type="hidden" name="question_text_{{ i }}" value="{{ questions[i].question }}">
+            <input type="hidden" name="explanation_{{ i }}" value="{{ questions[i].explanation }}">
+            <div class="options">
+                {% for option in questions[i].options %}
+                <div class="option-box">
+                    <input type="radio" id="option_{{ i }}_{{ loop.index }}" 
+                           name="question_{{ i }}" value="{{ option }}" required>
+                    <label for="option_{{ i }}_{{ loop.index }}">{{ option }}</label>
+                    <input type="hidden" name="options_{{ i }}[]" value="{{ option }}">
+                </div>
+                {% endfor %}
+            </div>
+            <input type="hidden" name="correct_{{ i }}" value="{{ questions[i].correct_answer }}">
+        </div>
+        {% endfor %}
+        <button type="submit" class="submit-btn">Submit Quiz</button>
+    </form>
+
+    <script>
+        // Add click handler for the entire option box
+        document.querySelectorAll('.option-box').forEach(box => {
+            box.addEventListener('click', function() {
+                // Find the radio input within this box
+                const radio = this.querySelector('input[type="radio"]');
+                radio.checked = true;
+                
+                // Remove selected class from all options in this question
+                const questionDiv = this.closest('.options');
+                questionDiv.querySelectorAll('.option-box').forEach(b => {
+                    b.classList.remove('selected');
+                });
+                
+                // Add selected class to this box
+                this.classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html> 

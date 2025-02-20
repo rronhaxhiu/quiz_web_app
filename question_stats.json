@@ -1,0 +1,112 @@
+{
+    "questions": {
+        "What are the types of cloud computing deployment models?": {
+            "times_seen": 1,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What is a System Call?": {
+            "times_seen": 1,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the three main functions of a Semaphore?": {
+            "times_seen": 1,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the types of clustering in operating systems?": {
+            "times_seen": 3,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What are the two types of virtualization?": {
+            "times_seen": 1,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the types of buffering in message passing systems?": {
+            "times_seen": 1,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the main attributes of a File?": {
+            "times_seen": 1,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the two main approaches to ensure a system never enters deadlock?": {
+            "times_seen": 3,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What are the main advantages of paging?": {
+            "times_seen": 1,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "What are the page replacement algorithms used when a page fault occurs?": {
+            "times_seen": 1,
+            "times_correct": 1,
+            "last_seen": "2025-02-20 23:12:46",
+            "mastered": false
+        },
+        "When is a system considered to be in a safe state?": {
+            "times_seen": 2,
+            "times_correct": 2,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What is the 90/10 rule in paging?": {
+            "times_seen": 2,
+            "times_correct": 2,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What are the three different times when address binding can occur?": {
+            "times_seen": 2,
+            "times_correct": 2,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What are the three most commonly used APIs?": {
+            "times_seen": 2,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What are the main services provided by Operating Systems?": {
+            "times_seen": 2,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What is a Lazy Swapper?": {
+            "times_seen": 2,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What is the difference between a program and a process?": {
+            "times_seen": 2,
+            "times_correct": 0,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        },
+        "What is Network-attached Storage (NAS)?": {
+            "times_seen": 2,
+            "times_correct": 2,
+            "last_seen": "2025-02-20 23:15:26",
+            "mastered": false
+        }
+    }
+}

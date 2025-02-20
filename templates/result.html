@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .score {
+            font-size: 24px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .new-test {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .retake {
+            background-color: #008CBA;
+            color: white;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .option {
+            margin: 5px 0;
+            padding: 5px;
+        }
+        .correct {
+            color: #4CAF50;
+        }
+        .incorrect {
+            color: #f44336;
+        }
+        .buttons {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .explanation {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #4CAF50;
+        }
+        .tick::before {
+            content: "✓ ";
+            color: #4CAF50;
+        }
+        .cross::before {
+            content: "✗ ";
+            color: #f44336;
+        }
+    </style>
+</head>
+<body>
+    <div class="score">
+        Your score: {{ score }} out of {{ total }}
+    </div>
+    
+    {% for q in questions %}
+    <div class="question">
+        <p><strong>Question {{ loop.index }}:</strong> {{ q.question }}</p>
+        <div class="options">
+            {% for option in q.options %}
+            <div class="option {% if option == q.user_answer %}
+                                {% if option == q.correct_answer %}correct tick{% else %}incorrect cross{% endif %}
+                             {% elif option == q.correct_answer %}correct tick{% endif %}">
+                {{ option }}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="explanation">
+            <strong>Explanation:</strong> {{ q.explanation }}
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="buttons">
+        <a href="/" class="btn new-test">Take New Test</a>
+        <a href="javascript:history.back()" class="btn retake">Retake Test</a>
+        <a href="/stats" class="btn" style="background-color: #2196F3; color: white; text-decoration: none;">View Statistics</a>
+    </div>
+</body>
+</html> 
