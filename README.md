@@ -43,12 +43,6 @@ Author: Rron Haxhiu
    python app.py
    ```
 
-   The application will run in debug mode as specified in:
-```python:app.py
-startLine: 156
-endLine: 157
-```
-
 3. Open your web browser and navigate to:
    ```
    http://127.0.0.1:5000/
